@@ -1,6 +1,6 @@
 # 💸 App de Finanças Pessoais de João Francisco com Vibe Coding
 
-PRD refinado no Copolit Web
+PRD refinado no Copilot Web
 
 ```markdown
 
