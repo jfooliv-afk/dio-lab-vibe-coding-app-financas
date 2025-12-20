@@ -1,4 +1,4 @@
-# 💸 App de Finanças Pessoais de João Francico com Vibe Coding
+# 💸 App de Finanças Pessoais de João Francisco com Vibe Coding
 
 PRD refinado no Copolit Web
 
