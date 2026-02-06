@@ -166,7 +166,8 @@ Devido à poucos créditos não foi possível interagir mais vom o Lovable.
 Conversa com a IA transcorreu de forma quase natural.
 
 
-Teste de commit para validar workflow Sync with Lovable.
+//Teste de commit para validar workflow Sync with Lovable.
+//Código sincronizado com Lovable. Deploy automático será disparado.
 
 
 
