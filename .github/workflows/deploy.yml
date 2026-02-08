@@ -12,5 +12,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Teste simples
-        run: echo "Workflow rodando com sucesso!"
+      - name: Instalar dependências
+        run: npm install
+        working-directory: .
+
+      - name: Rodar app
+        run: npm start
+        working-directory: .
