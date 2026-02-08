@@ -1,0 +1,12 @@
+{
+  "name": "chat-financas-ease",
+  "version": "1.0.0",
+  "description": "App de Finanças Pessoais de João Francisco com Vibe Coding",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "jfooliv-afk",
+  "license": "MIT",
+  "dependencies": {}
+}
