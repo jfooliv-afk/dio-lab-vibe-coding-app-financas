@@ -4,9 +4,12 @@
   "description": "App de Finanças Pessoais de João Francisco com Vibe Coding",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "lint": "eslint .",
+    "test": "jest"
   },
   "author": "jfooliv-afk",
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {}
 }
