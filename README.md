@@ -54,4 +54,5 @@ Quando identificar uma transação, inclua no final da resposta um bloco JSON:
   "tipo": "expense"
 }
 
+npx eslint .
 
