@@ -1,4 +1,13 @@
 
-let teste = "oi"
-console.log("🚀 FinançasAI rodando com sucesso!")
-console.log("💸 App de Finanças Pessoais de João Francisco com Vibe Coding")
+import express from "express";
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+app.get("/", (req, res) => {
+  res.send("App rodando no Render!");
+});
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
