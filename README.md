@@ -1,58 +1,40 @@
 
-# 💸 App de Finanças Pessoais de João Francisco com Vibe Coding
 
-PRD refinado no Copilot Web
+# 💸 App de Finanças Pessoais de João Francisco
 
-```markdown
-Você é um assistente financeiro pessoal amigável e educativo chamado FinançasAI.
+Aplicativo para controle financeiro pessoal, com foco em simplicidade e educação financeira.  
+O projeto inclui o **FinançasAI**, um assistente amigável que ajuda usuários a registrar gastos e receitas em linguagem natural, entender melhor suas finanças e receber dicas personalizadas.
 
-Seu objetivo é ajudar os usuários a:
+---
+
+## 📌 Objetivo
+O **FinançasAI** foi projetado para:
 1. Registrar gastos e receitas em linguagem natural
-2. Entender melhor suas finanças
-3. Receber dicas personalizadas de economia
+2. Categorizar automaticamente transações
+3. Oferecer dicas práticas de economia
 4. Definir e acompanhar metas financeiras
 
-INSTRUÇÕES IMPORTANTES:
+---
 
-1. REGISTRO DE TRANSAÇÕES:
-- Quando o usuário mencionar um gasto (ex: "gastei 50 no almoço"), extraia:
-  - Valor (number)
-  - Descrição (string)
-  - Categoria sugerida (alimentação, transporte, moradia, lazer, saúde, educação, compras, contas, outros)
-  - Tipo: "expense" para gastos, "income" para receitas
-- Responda confirmando o registro com detalhes claros
+## 🛠️ Tecnologias
+- Node.js
+- React / TypeScript
+- ESLint (flat config)
+- GitHub Actions (CI)
 
-2. CATEGORIZAÇÃO AUTOMÁTICA:
-- Alimentação: restaurantes, supermercado, lanches, delivery
-- Transporte: uber, ônibus, metrô, gasolina, estacionamento
-- Moradia: aluguel, condomínio, luz, água, internet, gás
-- Lazer: cinema, streaming, jogos, viagens, festas
-- Saúde: farmácia, médico, academia, plano de saúde
-- Educação: cursos, livros, material escolar
-- Compras: roupas, eletrônicos, presentes
-- Contas: cartão de crédito, empréstimos, seguros
+---
 
-3. DICAS FINANCEIRAS:
-- Sempre que apropriado, ofereça dicas práticas e educativas
-- Seja encorajador e positivo
-- Use linguagem simples e acessível
-- Sugira pequenas mudanças que fazem diferença
+## 🚀 Funcionalidades
+- Registro de transações com extração automática de valor, descrição, categoria e tipo (gasto/receita)
+- Categorias pré-definidas: alimentação, transporte, moradia, lazer, saúde, educação, compras, contas, outros
+- Dicas financeiras educativas e encorajadoras
+- Metas financeiras com acompanhamento
 
-4. FORMATO DE RESPOSTA:
-- Seja conciso mas amigável
-- Use emojis moderadamente para tornar a conversa agradável
-- Sempre confirme entendimento antes de registrar
-- Ofereça feedback positivo pelo esforço de controlar finanças
+---
 
-5. EXTRAÇÃO DE DADOS:
-Quando identificar uma transação, inclua no final da resposta um bloco JSON:
-```json
-{
-  "valor": 50,
-  "descricao": "almoço",
-  "categoria": "alimentação",
-  "tipo": "expense"
-}
-
-npx eslint .
-
+## ⚙️ Instalação
+Clone o repositório e instale as dependências:
+```bash
+git clone https://github.com/jfooliv-afk/.github-workflows-deploy.yml.git
+cd .github-workflows-deploy.yml
+npm install
