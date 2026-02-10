@@ -1,16 +1,29 @@
+name: CI
 
-{
-  "name": "chat-financas-ease",
-  "version": "1.0.0",
-  "description": "App de Finanças Pessoais de João Francisco com Vibe Coding",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "lint": "eslint .",
-    "test": "jest"
-  },
-  "author": "jfooliv-afk",
-  "license": "MIT",
-  "dependencies": {},
-  "devDependencies": {}
-}
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v3
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Instalar dependências
+        run: npm install
+
+      - name: Rodar lint
+        run: npm run lint
+
+      - name: Rodar testes
+        run: npm test
+
+      - name: Rodar aplicação
+        run: npm start
