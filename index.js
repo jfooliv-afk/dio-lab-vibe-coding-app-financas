@@ -1,13 +1,9 @@
 
 import express from "express";
+import cron from "node-cron";   // não esqueça de instalar: npm install node-cron
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.get("/", (req, res) => {
-  res.send("App rodando no Render!");
-});
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// Rota simples para teste
+app.get("/",—
